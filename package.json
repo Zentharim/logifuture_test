@@ -1,0 +1,29 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Sportsbook E2E project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "cypress run",
+    "cy:open": "cypress open",
+    "cy:nigeria_prod": "cypress open --config-file config/ng.js -e target_env=PRD,target_tenant=NG,grepTags=bet9ja+prod,grepOmitFiltered=true",
+    "cy:nigeria_prod_run": "cypress run --config-file config/ng.js -e target_env=PRD,target_tenant=NG,grepTags=bet9ja+prod,grepOmitFiltered=true",
+    "cy:nigeria_stg": "cypress open --config-file config/ng.js -e target_env=STG,target_tenant=NG,grepTags=bet9ja+stg,grepOmitFiltered=true",
+    "cy:nigeria_stg_run": "cypress run --config-file config/ng.js -e target_env=STG,target_tenant=NG,grepTags=bet9ja+stg,grepOmitFiltered=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/grep": "^4.0.0",
+    "cypress": "^12.3.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0",
+    "typescript": "^4.7.4"
+  }
+}
